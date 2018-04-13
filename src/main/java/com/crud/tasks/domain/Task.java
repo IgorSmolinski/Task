@@ -11,7 +11,8 @@ import javax.validation.constraints.NotNull;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity(name="tasks")
-public class Task {
+public class
+Task {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @NotNull
