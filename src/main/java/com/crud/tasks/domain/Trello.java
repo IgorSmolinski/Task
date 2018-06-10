@@ -5,6 +5,7 @@ import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public class AttachmentByTypes {
-    private Trello trello;
+public class Trello {
+    int board;
+    int card;
 }
