@@ -33,7 +33,7 @@ public class CoreConfiguration extends WebMvcConfigurerAdapter {
     }
 
 
-    @Bean
+    /*@Bean
     public Docket specificApi(){
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
@@ -41,7 +41,7 @@ public class CoreConfiguration extends WebMvcConfigurerAdapter {
                 .paths(PathSelectors.ant("/controller/*"))
                 .build();
 
-    }
+    }*/
 
         @Override
         public void addCorsMappings(CorsRegistry registry) {
