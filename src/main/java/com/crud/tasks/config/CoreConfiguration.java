@@ -26,22 +26,14 @@ public class CoreConfiguration extends WebMvcConfigurerAdapter {
     public Docket api(){
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.any())
+                .apis(RequestHandlerSelectors.basePackage("com.crud.tasks.controller"))
                 .paths(PathSelectors.any())
                 .build();
 
     }
 
 
-    /*@Bean
-    public Docket specificApi(){
-        return new Docket(DocumentationType.SWAGGER_2)
-                .select()
-                .apis(RequestHandlerSelectors.any())
-                .paths(PathSelectors.ant("/controller/*"))
-                .build();
 
-    }*/
 
         @Override
         public void addCorsMappings(CorsRegistry registry) {
