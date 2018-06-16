@@ -67,7 +67,8 @@ public class TrelloClientTest{
 
     @Test
     public void  shouldCreateCard() throws URISyntaxException{
-        //Give        when(trelloConfig.getTrelloApiEndpoint()).thenReturn("http://test.com");
+        //Give
+        when(trelloConfig.getTrelloApiEndpoint()).thenReturn("http://test.com");
         when(trelloConfig.getTrelloAppKey()).thenReturn("test");
         when(trelloConfig.getTrelloToken()).thenReturn("test");
         when(trelloConfig.getTrelloUserName()).thenReturn("pansmoa");
